@@ -1,4 +1,9 @@
 
+body {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
 h1 {
     text-align: center;
     color: green;
@@ -13,11 +18,18 @@ h2 {
 }
 
 a {
-    border:1px solid black;  
+    border:2px solid black;  
     border-radius: 5px;
-    padding: 5px;
+    padding: 10px;
+    text-decoration: none;
    }
+
+a:hover {
+    background-color: grey;
+}
 
 footer {
 text-align: center;
 }
+
+
