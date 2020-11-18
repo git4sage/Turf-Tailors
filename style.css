@@ -2,7 +2,10 @@
 body {
     padding-left: 50px;
     padding-right: 50px;
+    font-family: sans-serif;
+    font-weight: bold;
 }
+
 
 h1 {
     text-align: center;
@@ -12,24 +15,83 @@ h1 {
     font-weight: 900;
 }
 
+header {
+    text-align: center;
+}
+
 h2 {
     text-align: center;   
 
 }
+
+
+.collapsible {
+    border:2px solid black;  
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.active, .collapsible:hover {
+
+    background-color: lightgrey;
+}
+
+.one, .two, .three {
+    margin: 5px;
+    border:2px solid black;  
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+    font-family: sans-serif;
+    background-color: white;
+}
+
+
+.content {
+    margin: 5px;
+    border:2px solid black;  
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+    font-family: sans-serif;
+    background-color: green;
+}
+
+
+/*
 
 a {
     border:2px solid black;  
     border-radius: 5px;
     padding: 10px;
     text-decoration: none;
+    font-family: sans-serif;
    }
 
+   */
+
 a:hover {
-    background-color: grey;
+    background-color: lightgrey;
 }
 
 footer {
 text-align: center;
 }
 
+/* --- Flexbox --- */
 
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 35%;
+    justify-content: space-around;
+    background-color: pink;
+    
+}
+
+
+}

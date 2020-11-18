@@ -1,2 +1,7 @@
 [1028/194601.554:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
 [1104/182312.320:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1104/191512.892:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1104/194358.745:ERROR:process_info.cc(359)] UncheckedAllocate
+[1104/194358.927:ERROR:filesystem_win.cc(148)] DeleteFile C:\Users\Sage Williams\AppData\Local\Google\Chrome\User Data\Crashpad\reports\7433102e-5d4f-4e5a-bf93-6c21f29463ff.dmp: The process cannot access the file because it is being used by another process. (0x20)
+[1104/194359.023:ERROR:process_info.cc(359)] UncheckedAllocate
+[1104/194359.265:ERROR:process_info.cc(359)] UncheckedAllocate
