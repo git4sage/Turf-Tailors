@@ -20,22 +20,51 @@
             Services
         </h2>
 
+<!-- Main Menu -->
+
         <div class="main-nav">
             <a href="../index.html">About</a>
             <a href="services.html">Available Services</a>
             <a href="contact.html">Contact Us</a>
         </div>   
 
-        <ul>
-            <li>Weekly mowing</li> 
-            <li>Trimming/pruning and removal of bushes</li> 
-            <li>Mulching</li> 
-            <li>Light landscaping</li> 
-            <li>Aeration and overseeding</li> 
-            <li>Power seeding</li> 
-            <li>Leaf removal</li>        
-        </ul>
     </p>
+
+<!-- Drowpdown Menu -->
+
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbutton">Services</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="#">Mowing</a>
+          <a href="#">Trimming/Pruning</a>
+          <a href="#">Mulching</a>
+          <a href="#">Landscaping</a>
+          <a href="#">Aeration</a>
+          <a href="#">Overseeding</a>
+          <a href="#">Power seeding</a>
+          <a href="#">Leaf Removal</a>
+        </div>
+      </div>
+       
+<!-- Dropdown Menu Button JS -->
+
+      <script>function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      
+      window.onclick = function(event) {
+        if (!event.target.matches('.dropbutton')) {
+          var dropdowns = document.getElementsByClassName("dropdown-content");
+          var i;
+          for (i = 0; i < dropdowns.length; i++) {
+            var openDropdown = dropdowns[i];
+            if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+            }
+          }
+        }
+      }</script>
 
     <footer> 
 

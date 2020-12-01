@@ -1,26 +1,26 @@
 
 body {
-    padding-left: 50px;
-    padding-right: 50px;
-    font-family: sans-serif;
-    font-weight: bold;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-family: sans-serif;
+  font-weight: bold;
 }
 
 
 h1 { 
-    text-align: center;
-    color: green;
-    text-shadow: 2px 2px black;
-    font-family: sans-serif;
-    font-weight: 900;
+  text-align: center;
+  color: green;
+  text-shadow: 2px 2px black;
+  font-family: sans-serif;
+  font-weight: 900;
 }
 
 header {
-    text-align: center;
+  text-align: center;
 }
 
 h2 {
-    text-align: center;   
+  text-align: center;   
 
 }
 
@@ -32,45 +32,86 @@ text-align: center;
 /* --- Flexbox --- */
 
 .main-nav {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-   
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
 }
 
 .main-nav a {
-    background-color: rgb(0, 71, 0);
-    color: green;
-    padding: 14px 20px;
-    text-decoration: none;
-    text-align: center;
-    text-transform: uppercase;
-    border-radius: 10px;
+  background-color: rgb(0, 71, 0);
+  color: green;
+  padding: 14px 20px;
+  margin: 1px;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px;
 }
 
 .main-nav a:hover {
-        background-color: green;
-        color: rgb(0, 71, 0)
-      }
-      
+      background-color: green;
+      color: rgb(0, 71, 0)
+    }
 
-/* Media Querries*/
+/* --- dropdown menu --- */
+.dropbutton {
+  background-color: rgb(0, 71, 0);
+  color: green;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.dropbutton:hover, .dropbutton:focus {
+  background-color:green;
+  color: rgb(0, 71, 0)
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #adadad;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 14px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: rgb(202, 202, 202)}
+
+.show {display:block;}
+
+
+/* --- Media Querries --- */
 
 @media (min-width: 600px) {
 
-	.main-nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-	}
+.main-nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+}
 
 }
 
 @media (min-width: 992px) {
 
-	.main-nav {
-        justify-content: space-evenly;
-        border-radius: 10px;
-	}
-
+.main-nav {
+      justify-content: space-evenly;
+      border-radius: 5px;
 }
