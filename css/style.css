@@ -13,17 +13,51 @@ h1 {
   text-shadow: 2px 2px black;
   font-family: sans-serif;
   font-weight: 900;
+  font-size: 4em;
 }
 
 header {
   text-align: center;
 }
-
-h2 {
-  text-align: center;   
-
+/* background image and title */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
+.centered {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.grass {
+width: 100%;
+padding: 0;
+}
+
+.subheading {
+text-decoration: underline;
+text-decoration-color: green;
+}
+
+h2 {
+  text-align: center;  
+  color: green;
+  font-family: sans-serif
+  font-weight: 900; 
+}
+
+.serveinfo {
+border-style: solid;
+border-width: 3px;
+border-radius: 10px;
+border-color: black;
+padding: 20px;
+margin: 10px;
+}
 
 footer {
 text-align: center;
@@ -39,10 +73,11 @@ text-align: center;
 }
 
 .main-nav a {
-  background-color: rgb(0, 71, 0);
-  color: green;
+  background-color: green;
+  color:  rgb(0, 71, 0);
   padding: 14px 20px;
   margin: 1px;
+  min-width: 150px;
   text-decoration: none;
   text-align: center;
   text-transform: uppercase;
@@ -50,31 +85,37 @@ text-align: center;
 }
 
 .main-nav a:hover {
-      background-color: green;
-      color: rgb(0, 71, 0)
-    }
+  background-color: rgb(0, 71, 0);
+  color:green;
+}
 
 /* --- dropdown menu --- */
 .dropbutton {
-  background-color: rgb(0, 71, 0);
+  align-items: center;
+  background-color: white;
   color: green;
+  text-decoration: underline;
   padding: 16px;
-  font-size: 16px;
+  font-size: 1.5em;
   font-weight: bold;
   text-transform: uppercase;
   border: none;
   cursor: pointer;
   border-radius: 5px;
+  
 }
 
 .dropbutton:hover, .dropbutton:focus {
-  background-color:green;
-  color: rgb(0, 71, 0)
+  background-color:rgb(209, 209, 209);
+  color: rgb(0, 71, 0);
 }
 
 .dropdown {
+  display: flex;
+  justify-content: center;
   position: relative;
-  display: inline-block;
+ /* display: inline-block; */
+ /* left:50%; */
 }
 
 .dropdown-content {
@@ -95,7 +136,6 @@ text-align: center;
 .dropdown-content a:hover {background-color: rgb(202, 202, 202)}
 
 .show {display:block;}
-
 
 /* --- Media Querries --- */
 
