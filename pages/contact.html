@@ -26,7 +26,7 @@
      </header>
 
             <h2 class="subheading"> 
-                CONTACT:
+                !!!Contact us today for a FREE estimate!!!
             </h2>
           
 
@@ -39,11 +39,46 @@
         </div>
 
         <p>
-            <h2>
-                Contact us today for a FREE estimate!!!
-            </h2>
+            
         </p>
 
+        <div class="serveinfo">
+
+            <h2>
+                PRICE QUOTE ESTIMATOR
+            </h2>
+
+        <p>Don't want to wait? Use our lawn "<span class="estimator">PRICE QUOTE ESTIMATOR</span>" for an approximation of 
+            what it may cost to have us mow your lawn!
+        </p>
+
+<p class="input">*Please enter lawn size to the nearest 1000ft</p>
+
+<input type="text" id="squareft">
+
+<button onclick="calculate()" class="calcButton">Calculate</button>
+
+
+<script>
+
+function calculate(){
+
+    var field1=document.getElementById("squareft").value;
+    var dollarperft=.0025;
+
+    var result=parseFloat(field1)*(dollarperft);
+
+    if(!isNaN(result))
+        {
+            document.getElementById("answer").innerHTML="Your quote estimate is $"+result;
+        }
+}
+
+</script>
+
+<h2 id="answer" ()></h2>
+
+        </div>
         <footer> 
 
         </footer>

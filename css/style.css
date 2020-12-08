@@ -37,6 +37,7 @@ header {
 height:20%
 }
 
+/* --- other content styles --- */
 
 .subheading {
 text-decoration: underline;
@@ -59,6 +60,10 @@ padding: 20px;
 margin-left:50px;
 margin-right: 50px;
 margin-bottom: 10px;
+}
+
+.estimator {
+  color: green;
 }
 
 footer {
@@ -107,6 +112,8 @@ text-align: center;
   
 }
 
+
+
 .dropbutton:hover, .dropbutton:focus {
   background-color:rgb(209, 209, 209);
   color: rgb(0, 71, 0);
@@ -136,6 +143,27 @@ text-align: center;
 .dropdown-content a:hover {background-color: rgb(202, 202, 202)}
 
 .show {display:block;}
+
+/* --- estimate calculator --- */
+
+.input {
+color: red;
+}
+
+.calcButton {
+  align-items: center;
+  background-color: green;
+  color: rgb(0, 71, 0);
+  text-decoration: none;
+  padding: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+
+}
+
 
 /* --- images --- */
 
