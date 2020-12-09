@@ -68,9 +68,11 @@ function calculate(){
 
     var result=parseFloat(field1)*(dollarperft);
 
-    if(!isNaN(result))
+    var est = result.toFixed(2);
+
+    if(!isNaN(est))
         {
-            document.getElementById("answer").innerHTML="Your quote estimate is $"+result;
+            document.getElementById("answer").innerHTML="Your quote estimate is $"+est;
         }
 }
 
