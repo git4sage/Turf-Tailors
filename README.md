@@ -18,5 +18,5 @@ Media Query Breakpoints:
 
 *Special Insturctions:*
 - to access services dropdown button, simply hover over "Services" on the services page and click, then select your desired service and you will be routed to that portion of the page. 
-- to use the "Price Quote Estimator" simply enter the square footage of the lawn into the box and click the "Calculate" button. 
+- to use the "Price Quote Estimator" simply enter the square footage of the lawn into the box and click the "Calculate" button. For example if you enter 15000 the calculator will output $37.50.
 
